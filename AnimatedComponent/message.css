@@ -1,0 +1,107 @@
+.title-card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 80vh;
+    height: 30vh;
+    background: #333456;
+    position: relative;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+.title-card:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+.title-card h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    font-size: 2em;
+}
+
+.title-card p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.title-card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, #F4ABC4, #F4ABC4);
+    height: 300%;
+    animation: rotBGimg 6s linear infinite;
+    transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.title-card::after {
+    content: '';
+    position: absolute;
+    background: #595B83;
+    inset: 5px;
+    border-radius: 15px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .title-card {
+        width: 70vh;
+        height: 25vh;
+    }
+}
+
+@media (max-width: 992px) {
+    .title-card {
+        width: 60vh;
+        height: 22.5vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-card {
+        width: 50vh;
+        height: 20vh;
+    }
+
+    .title-card h2 {
+        font-size: 1.5em;
+    }
+
+    .title-card p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 576px) {
+    .title-card {
+        width: 90vw;
+        height: 35vh;
+    }
+
+    .title-card h2 {
+        font-size: 1.2em;
+    }
+
+    .title-card p {
+        font-size: 0.9em;
+    }
+}
