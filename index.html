@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="./Typewriter/typewriterStyles.css">
+    <link rel="stylesheet" href="./AnimatedComponent/message.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./100Reasons/reasons.css">
+    <link rel="stylesheet" href="./BirthdayCard/book.css">
+    <link rel="stylesheet" href="./ScrollEffect/hidden.css">
+    <link rel="stylesheet" href="./ImageCarousel/scrollCarousel.css">
+    <script src="https://kit.fontawesome.com/869f5170f4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="main-container hidden">
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <section class="dark-mode light-mode">
+            <div class="typewriter-container">
+                <h1>HAPPY BIRTHDAY<img id="celebration" src="./Images/celebration.gif"/><br />you're <span id="typewriter"></span><span id="cursor">|</span></h1>
+            </div>
+        </section>
+        <section class="hidden dark-mode light-mode">
+            <div class="title-card">
+                <h2>Card Component #1</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi consequuntur error beatae minus placeat nisi facere minima vel harum alias officiis, atque unde, amet autem, ex quis repellat molestiae in?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, quos. Itaque eligendi veniam soluta magnam harum ad, sit sed delectus magni. Atque eum alias, pariatur est delectus corporis qui eaque?
+                </p>
+            </div>
+        </section>
+        <section class="hidden dark-mode light-mode">
+            <div>
+                <div class="scroller" data-speed="fast" data-direction="left">
+                    <div class="scroller__inner">
+                        <img src="https://picsum.photos/id/237/200" alt="">
+                        <img src="https://picsum.photos/id/238/200" alt="">
+                        <img src="https://picsum.photos/id/239/200" alt="">
+                        <img src="https://picsum.photos/id/240/200" alt="">
+                        <img src="https://picsum.photos/id/241/200" alt="">
+                        <img src="https://picsum.photos/id/242/200" alt="">
+                        <img src="https://picsum.photos/id/243/200" alt="">
+                        <img src="https://picsum.photos/id/244/200" alt="">
+                    </div>
+                </div>
+                <div class="scroller" data-direction="right" data-speed="fast">
+                    <div class="scroller__inner">
+                        <img src="https://picsum.photos/id/245/200" alt="">
+                        <img src="https://picsum.photos/id/246/200" alt="">
+                        <img src="https://picsum.photos/id/247/200" alt="">
+                        <img src="https://picsum.photos/id/248/200" alt="">
+                        <img src="https://picsum.photos/id/249/200" alt="">
+                        <img src="https://picsum.photos/id/250/200" alt="">
+                        <img src="https://picsum.photos/id/251/200" alt="">
+                        <img src="https://picsum.photos/id/252/200" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hidden dark-mode light-mode">
+            <div class="container">
+                <h1>100 Reasons Why You Are The Best Mom Ever!</h1>
+                <div class="card-container">
+                    <div class="card" onclick="flipCard(this)">
+                        <div class="front">
+                            <h2></h2>
+                        </div>
+                        <div class="back">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button id="prev" onclick="showPreviousCard()">Previous</button>
+                    <button id="next" onclick="showNextCard()">Next</button>
+                </div>
+            </div>
+        </section>
+        <section class="hidden dark-mode light-mode">
+            <div class="title-card">
+                <h2>Card Component #2</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad voluptatem impedit? Sit velit praesentium repudiandae repellat, labore fugit! Officia neque itaque blanditiis nisi, corporis ad minus assumenda hic amet!</p>                
+            </div>
+        </section>
+        <section class="hidden dark-mode light-mode">
+            <div class="book">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi molestias, harum quod incidunt vero velit corporis aut maxime labore eveniet adipisci reiciendis aliquam. Dolorem doloremque, ea maiores deleniti facere enim.</p>
+                <div class="cover">
+                    <p>Interactive Card</p>
+                </div>
+            </div>
+        </section>
+        <img class="clickMe" src="./Images/Arrow.gif" alt="">
+        <p class="clickMe">Hold</p>
+        <section class="hidden dark-mode light-mode">
+            <div class="title-card">
+                <h2>Card Component #3</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit laboriosam modi commodi saepe praesentium omnis fugit esse, nemo voluptatum delectus rem libero, consequatur veniam. Voluptate saepe fugiat quis nobis eos!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid quidem illo deserunt officia id facere, dolore inventore ut sequi, vero voluptas, maiores blanditiis quisquam velit possimus distinctio omnis cumque dolorum.
+                </p>                
+            </div>
+        </section>
+    </div>
+    <script src="./Typewriter/typewriter.js"></script>
+    <script src="./100Reasons/reasons.js"></script>
+    <script src="./ScrollEffect/hidden.js"></script>
+    <script src="./ImageCarousel/scrollCarousel.js"></script>
+    <script src="toggleTheme.js"></script>
+  </body>
+</html>
