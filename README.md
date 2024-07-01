@@ -1,5 +1,5 @@
 # Digital Birthday Card Website
-View live demo - [HERE](https://digital-birthdaycard.netlify.app/)
+View the live demo - [HERE](https://digital-birthdaycard.netlify.app/)
 
 
 ## Features
