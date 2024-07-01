@@ -1,0 +1,36 @@
+.typewriter-container {
+    padding: 15px;
+  }
+  
+  #celebration {
+    max-width: 80px;
+    max-height: 80px;
+  
+  }
+  
+  h1 {
+      font-family: sans-serif;
+      font-size: 50px;
+      text-align: center;
+      color: #595B83;
+  }
+  
+  #typewriter {
+  font-family: sans-serif;
+  color: #F4ABC4;
+  font-weight: bold;
+  }
+  
+  #cursor {
+      color: #F4ABC4;
+      animation: blink 1s linear infinite;
+  }
+  
+  @keyframes blink {
+      0% {
+        opacity: 100%;
+      }
+      50% {
+        opacity: 0%;
+      }
+  }
