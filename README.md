@@ -9,6 +9,7 @@ View the live demo - [HERE](https://digital-birthdaycard.netlify.app/)
 - **100 Reasons Why ___:** An interactive component with cards numbered 1-100. Each card flips on click to reveal a reason, with navigation options, illustrating the use of JavaScript for DOM manipulation and event handling.
 - **Interactive Birthday Card:** A card that opens like a real birthday card when clicked or hovered over, revealing a message inside, highlighting creative CSS and JavaScript for animations.
 - **Image Carousel:** A carousel component that cycles through multiple images in a line, demonstrating the implementation of responsive design and JavaScript for image handling.
+- **Dark/Light Mode Toggle:** A toggle switch allowing users to switch between dark and light modes, showcasing CSS variables and JavaScript for theme switching.
 
 ## Technologies Used
 
